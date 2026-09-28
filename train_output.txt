@@ -1,0 +1,54 @@
+============================================================
+Training Instagram Fake Profile Detector...
+============================================================
+Instagram rows: 696 | Fake: 348 | Real: 348
+Instagram Model Accuracy: 0.9071
+              precision    recall  f1-score   support
+
+        Real       0.88      0.94      0.91        70
+        Fake       0.94      0.87      0.90        70
+
+    accuracy                           0.91       140
+   macro avg       0.91      0.91      0.91       140
+weighted avg       0.91      0.91      0.91       140
+
+Saved: instagram_fake_detector.pkl
+
+============================================================
+Training Twitter Bot Detector...
+============================================================
+Twitter (bot detection) rows: 50000 | Bot: 25018 | Human: 24982
+Twitter Model Accuracy: 0.5030
+              precision    recall  f1-score   support
+
+       Human       0.50      0.51      0.51      4996
+         Bot       0.50      0.49      0.50      5004
+
+    accuracy                           0.50     10000
+   macro avg       0.50      0.50      0.50     10000
+weighted avg       0.50      0.50      0.50     10000
+
+Saved: twitter_fake_detector1.pkl
+
+============================================================
+Training General Social Media Fake Profile Detector...
+============================================================
+General dataset rows: 3000 | Fake: 2993 | Real: 7
+General Model Accuracy: 0.9950
+              precision    recall  f1-score   support
+
+        Real       0.00      0.00      0.00         1
+        Fake       1.00      1.00      1.00       599
+
+    accuracy                           0.99       600
+   macro avg       0.50      0.50      0.50       600
+weighted avg       1.00      0.99      1.00       600
+
+Saved: best_fake_profile_model.pkl, scaler.pkl, platform_encoder.pkl
+
+============================================================
+ALL MODELS TRAINED AND SAVED SUCCESSFULLY!
+  instagram_fake_detector.pkl  -> n_features: 11
+  twitter_fake_detector1.pkl   -> n_features: 13
+  best_fake_profile_model.pkl  -> n_features: 17
+============================================================

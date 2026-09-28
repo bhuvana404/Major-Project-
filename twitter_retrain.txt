@@ -1,0 +1,28 @@
+Loading twitter_profiles.csv...
+Rows: 10000 | Fake(1): 4023 | Real(0): 5977
+
+Random Forest Accuracy: 0.9565
+              precision    recall  f1-score   support
+
+        Real       0.99      0.94      0.96      1195
+        Fake       0.92      0.98      0.95       805
+
+    accuracy                           0.96      2000
+   macro avg       0.95      0.96      0.96      2000
+weighted avg       0.96      0.96      0.96      2000
+
+
+Gradient Boosting Accuracy: 0.9545
+              precision    recall  f1-score   support
+
+        Real       0.98      0.95      0.96      1195
+        Fake       0.92      0.97      0.94       805
+
+    accuracy                           0.95      2000
+   macro avg       0.95      0.96      0.95      2000
+weighted avg       0.96      0.95      0.95      2000
+
+
+Saving best Twitter model (acc=0.9565)...
+Saved: twitter_fake_detector1.pkl
+n_features: 13
